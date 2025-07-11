@@ -1,0 +1,5 @@
+jupyterlab
+numpy
+pillow
+pandas
+opencv-python-headless

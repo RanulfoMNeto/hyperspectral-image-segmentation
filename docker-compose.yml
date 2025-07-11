@@ -1,0 +1,12 @@
+services:
+  jupyterlab:
+    container_name: jupyterlab
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./src:/app/src
+      - ./dataset:/app/dataset
+    working_dir: /app/src
